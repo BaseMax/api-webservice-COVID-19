@@ -7,9 +7,11 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 ## Features
 
 - Free, Open Source, Easy and short code
+- Ability to create token for suers
 - Ability to search in country
 - Ability to sort (ASC or DESC) in country list
 - Ability to get total number (in world)
+- Ability to limit auth and token
 
 ----------
 
