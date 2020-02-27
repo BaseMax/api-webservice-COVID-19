@@ -13,6 +13,14 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 - Ability to get total number (in world)
 - Ability to limit auth and token
 
+
+## Using from COVID19 API
+
+- Download source files
+- Upload sources files in a webserver (e.g: /var/www/html or /usr/share/nginx/html or ...)
+- Create a database for this project
+- Put username, password and database name in `_core.php` file and config this project by modify `_core.php` file
+
 ----------
 
 # COVID-19 CORONAVIRUS OUTBREAK
