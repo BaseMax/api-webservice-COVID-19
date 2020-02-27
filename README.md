@@ -107,7 +107,7 @@ All request need `token` value in header, You can create `token` in **token** ta
 
 **GET:** http://localhost/api-webservice-COVID-19/?method=total
 
-**POST:** http://localhost/api-webservice-COVID-19/?method=total with `method=total`
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=total`
 
 ```json
 {
