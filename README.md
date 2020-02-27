@@ -20,6 +20,9 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 - Upload sources files in a webserver (e.g: /var/www/html or /usr/share/nginx/html or ...)
 - Create a database for this project
 - Put username, password and database name in `_core.php` file and config this project by modify `_core.php` file
+- Import `corona.sql` file into your database (using phpmyadmin or mariadb, mysql cli or other tools)
+
+> Note: corona.sql is database structure with empty table, you will use it to setup this project. But output.sql is a database output with current corona data.
 
 ----------
 
