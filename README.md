@@ -17,9 +17,9 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 ### Country List
 
-**GET:** http://localhost/matno2/?method=list
+**GET:** http://localhost/api-webservice-COVID-19/?method=list
 
-**POST:** http://localhost/matno2/ with `method=list` data
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=list` data
 
 ```json
 {
@@ -47,21 +47,21 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 ##### DESC sort:
 
-**GET:** http://localhost/matno2/?method=list&sort=totalCase&type=desc
+**GET:** http://localhost/api-webservice-COVID-19/?method=list&sort=totalCase&type=desc
 
-**POST:** http://localhost/matno2/ with `method=list&sort=totalCase&type=desc` data
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=list&sort=totalCase&type=desc` data
 
 ##### or ASC sort:
 
-**GET:** http://localhost/matno2/?method=list&sort=totalCase&type=asc
+**GET:** http://localhost/api-webservice-COVID-19/?method=list&sort=totalCase&type=asc
 
-**POST:** http://localhost/matno2/ with `method=list&sort=totalCase&type=asc` data
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=list&sort=totalCase&type=asc` data
 
 ### Search in country
 
-**GET:** http://localhost/matno2/?method=search&query=ir
+**GET:** http://localhost/api-webservice-COVID-19/?method=search&query=ir
 
-**POST:** http://localhost/matno2/ with `method=search&query=ir`
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=search&query=ir`
 
 ```json
 {
@@ -96,16 +96,16 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 ### Search in country with sort
 
-**GET:** http://localhost/matno2/?method=search&query=ir&sort=totalCase&type=asc
+**GET:** http://localhost/api-webservice-COVID-19/?method=search&query=ir&sort=totalCase&type=asc
 
-**POST:** http://localhost/matno2/ with `method=search&query=ir&sort=totalCase&type=asc` data
+**POST:** http://localhost/api-webservice-COVID-19/ with `method=search&query=ir&sort=totalCase&type=asc` data
 
 
 ### Total numbers in all country and in the world
 
-**GET:** http://localhost/matno2/?method=total
+**GET:** http://localhost/api-webservice-COVID-19/?method=total
 
-**POST:** http://localhost/matno2/?method=total with `method=total`
+**POST:** http://localhost/api-webservice-COVID-19/?method=total with `method=total`
 
 ```json
 {
