@@ -4,6 +4,13 @@ API: Web Service Coronavirus Disease 2019 (COVID-19), Access to live data of out
 
 Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreakAPI).
 
+## Features
+
+- Free, Open Source, Easy and short code
+- Ability to search in country
+- Ability to sort (ASC or DESC) in country list
+- Ability to get total number (in world)
+
 ----------
 
 # COVID-19 CORONAVIRUS OUTBREAK
