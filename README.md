@@ -24,6 +24,11 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 > Note: corona.sql is database structure with empty table, you will use it to setup this project. But output.sql is a database output with current corona data.
 
+## How keep data live and up to date?
+
+Run `$ php _update.php update` every time you want to update your database rows.
+It will automaticly update and change data, if they are new or changed!
+
 ----------
 
 # COVID-19 CORONAVIRUS OUTBREAK
