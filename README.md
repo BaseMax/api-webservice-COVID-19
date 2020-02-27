@@ -15,7 +15,7 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 ## COVID19 API
 
-All request need `token` value in header, You can create `token` in ***token** table.
+All request need `token` value in header, You can create `token` in **token** table.
 
 ### Country List
 
