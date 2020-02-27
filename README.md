@@ -13,8 +13,51 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 - Ability to get total number (in world)
 - Ability to limit auth and token
 
+## COVID19 API
 
-## Using from COVID19 API
+### Country List
+
+**GET:** http://localhost/matno2/?method=list
+
+**POST:** http://localhost/matno2/ with `method=list` data
+
+```
+{
+	status: "success",
+	message: "",
+	lastUpdate: "2020-02-27 18:05:06",
+	result: [
+		{
+		id: 1,
+		name: "china",
+		totalCase: 78514,
+		newCase: 450,
+		totalDeath: 2747,
+		newDeath: 32,
+		totalRecovered: 32954,
+		seriousUser: 8346,
+		datetime: "2020-02-27 18:05:03"
+		},
+		...
+	]
+}
+```
+
+### Country List with Sort
+
+##### DESC sort:
+
+**GET:** http://localhost/matno2/?method=list&sort=totalCase&type=desc
+
+**POST:** http://localhost/matno2/ with `method=list&sort=totalCase&type=desc` data
+
+##### or ASC sort:
+
+**GET:** http://localhost/matno2/?method=list&sort=totalCase&type=asc
+
+**POST:** http://localhost/matno2/ with `method=list&sort=totalCase&type=asc` data
+
+## Installing / Using from COVID19 API
 
 - Download source files
 - Upload sources files in a webserver (e.g: `/var/www/html` or `/usr/share/nginx/html` or ...)
