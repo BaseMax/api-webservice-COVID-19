@@ -29,6 +29,21 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 Run `$ php _update.php update` every time you want to update your database rows.
 It will automaticly update and change data, if they are new or changed!
 
+## Using crontab to automaticly update results
+
+Crontab command: `* */2 * * * php _update.php >/dev/null 2>&1`
+
+Current time is: 2020-02-26 7:29:00 PM UTC
+
+This cron job will be run at: (5 times displayed and more...)
+
+- 2020-02-26 20:00:00 UTC
+- 2020-02-26 20:01:00 UTC
+- 2020-02-26 20:02:00 UTC
+- 2020-02-26 20:03:00 UTC
+- 2020-02-26 20:04:00 UTC
+- ...
+
 ----------
 
 # COVID-19 CORONAVIRUS OUTBREAK
