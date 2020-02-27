@@ -21,7 +21,7 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 
 **POST:** http://localhost/matno2/ with `method=list` data
 
-```
+```json
 {
 	status: "success",
 	message: "",
@@ -56,6 +56,67 @@ Based on [CoronaVirusOutbreakAPI](https://github.com/BaseMax/CoronaVirusOutbreak
 **GET:** http://localhost/matno2/?method=list&sort=totalCase&type=asc
 
 **POST:** http://localhost/matno2/ with `method=list&sort=totalCase&type=asc` data
+
+### Search in country
+
+**GET:** http://localhost/matno2/?method=search&query=ir
+
+**POST:** http://localhost/matno2/ with `method=search&query=ir`
+
+```json
+{
+	status: "success",
+	message: "",
+	result: [
+		{
+			id: 5,
+			name: "iran",
+			totalCase: 245,
+			newCase: 106,
+			totalDeath: 26,
+			newDeath: 7,
+			totalRecovered: 25,
+			seriousUser: 0,
+			datetime: "2020-02-27 16:05:56"
+		},
+		{
+			id: 24,
+			name: "iraq",
+			totalCase: 6,
+			newCase: 1,
+			totalDeath: 0,
+			newDeath: 0,
+			totalRecovered: 0,
+			seriousUser: 0,
+			datetime: "2020-02-27 16:05:59"
+		}
+	]
+}
+```
+
+### Search in country with sort
+
+**GET:** http://localhost/matno2/?method=search&query=ir&sort=totalCase&type=asc
+
+**POST:** http://localhost/matno2/ with `method=search&query=ir&sort=totalCase&type=asc` data
+
+
+### Total numbers in all country and in the world
+
+**GET:** http://localhost/matno2/?method=total
+
+**POST:** http://localhost/matno2/?method=total with `method=total`
+
+```json
+{
+	status: "success",
+	message: "",
+	result: {
+		all: "163492",
+		died: "5588"
+	}
+}
+```
 
 ## Installing / Using from COVID19 API
 
