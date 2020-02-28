@@ -1,7 +1,5 @@
 <?php
-if(!defined('BASE')) {
-	define('BASE', __DIR__ . '/');
-}
+define("BASE", __DIR__ . "/");
 require_once "_core.php";
 require_once "_api.php";
 $tmpFileName="page.html";
