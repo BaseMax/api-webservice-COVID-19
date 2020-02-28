@@ -23,7 +23,7 @@ function update() {
 	file_put_contents($tmpFileName, $file);
 	$matchs=parseData($file);
 	$items=prepareData($matchs);
-	// print_r($items);
+	print_r($items);
 	foreach($items as $item) {
 		// name, totalCase, newCase, totalDeath, newDeath, totalRecovered, seriousUser
 		$clauses=[
