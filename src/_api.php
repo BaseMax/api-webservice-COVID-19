@@ -12,11 +12,15 @@ if(!defined('BASE')) {
 require_once "_netphp.php";
 
 function parseData($content) {
+	$regex=get("https://raw.githubusercontent.com/BaseMax/CoronaVirusOutbreakAPI/master/src/regex.txt");
+	file_put_contents("regex.txt", $regex);
+	$regex=explode("\n", $regex[0]);
+	// $regex=explode("\n", file_get_contents("regex.txt"));
 	if($content == "" || $content == null) {
 		return [];
 	}
-	// <td style="font-weight: bold; font-size:15px; text-align:left; padding-left:3px;"> USA <\/td> <td style="font-weight: bold; text-align:right">57<\/td> <td style="font-weight: normal; text-align:right;"> <\/td> <td style="font-weight: bold; text-align:right;"> <\/td> <td style="font-weight: bold; text-align:right; "> <\/td> <td style="font-weight: bold; text-align:right">6 <\/td> <td style="font-weight: bold; text-align:right"> <\/td> <td style="font-size:14px; color:#aaa; text-align:right" class="hidden"> N.America <\/td> </tr>
-	if(preg_match_all('/<tr([^\>]+|)>(\s*|)<td([^\>]+|)>(\s*|)(<span([^\>]+|)>|)(<a([^\>]+|)>|)(?<name>[^\<]+)(<\/a>|)(<\/span>|)(\s*|)<\/td>(\s*|)<td([^\>]+|)>(?<totalCase>[^\<]+)<\/td>(\s*|)(\<\!--.*?-->|)(\s*|)<td([^\>]+|)>(?<newCase>[^\<]+)<\/td>(\s*|)<td([^\>]+|)>(?<totalDeath>[^\<]+)<\/td>(\s*|)<td([^\>]+|)>(?<newDeath>[^\<]+)<\/td>(\s*|)<td([^\>]+|)>(?<totalRecovered>[^\<]+)<\/td>(\s*|)(<!--.*?-->|)(\s*|)<td([^\>]+|)>(?<seriousUser>[^\<]+)<\/td>(\s*|)/i', $content, $matches)) {
+	preg_match($regex[0], $content, $table);
+	if(preg_match_all($regex[1], $table["content"], $matches)) {
 		foreach($matches as $key=>$array) {
 			if(!is_string($key)) {
 				unset($matches[$key]);// To remove extra list, arrays!

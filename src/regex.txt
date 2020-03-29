@@ -1,0 +1,28 @@
+/<table([^\>]+|)id="main_table_countries_today"([^\>]+|)>(?<content>.*?)<\/table>/is
+/<tr([^\>]+|)>(\s*|)<td([^\>]+|)>(\s*|)(<span([^\>]+|)>|)(<a([^\>]+|)>|)(?<name>[^\<]+|)(<\/a>|)(<\/span>|)(\s*|)<\/td>(\s*|)<td([^\>]+|)>(?<totalCase>[^\<]+|)<\/td>(\s*|)(\<\!--.*?-->|)(\s*|)<td([^\>]+|)>(?<newCase>[^\<]+|)<\/td>(\s*|)<td([^\>]+|)>(?<totalDeath>[^\<]+|)<\/td>(\s*|)<td([^\>]+|)>(?<newDeath>[^\<]+|)<\/td>(\s*|)<td([^\>]+|)>(?<totalRecovered>[^\<]+|)<\/td>(\s*|)(<!--.*?-->|)(\s*|)<td([^\>]+|)>(?<seriousUser>[^\<]+|)<\/td>(\s*|)/iHTTP/1.1 200 OK
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+ETag: W/"fdc1df848a628918dc3f7737e58f38f5c5d6543021a0b45f955bf5871cc1de90"
+Content-Type: text/plain; charset=utf-8
+Cache-Control: max-age=300
+X-Geo-Block-List:
+Via: 1.1 varnish (Varnish/6.0)
+X-GitHub-Request-Id: 3F10:1E93:1D226:29B85:5E80ADD7
+Content-Length: 533
+Accept-Ranges: bytes
+Date: Sun, 29 Mar 2020 14:16:56 GMT
+Via: 1.1 varnish
+Connection: keep-alive
+X-Served-By: cache-hhn4040-HHN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1585491416.421882,VS0,VE166
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+X-Fastly-Request-ID: 918fc2b0848149bbc77b1e9e9b3aa24f46746afd
+Expires: Sun, 29 Mar 2020 14:21:56 GMT
+Source-Age: 0
+

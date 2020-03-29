@@ -3,15 +3,6 @@ define("BASE", __DIR__ . "/");
 require_once "_core.php";
 require_once "_api.php";
 $tmpFileName="page.html";
-// Crontab command: `* */2 * * * php _update.php >/dev/null 2>&1`
-// Current time is: 2020-02-26 7:29:00 PM UTC
-// This cron job will be run at: (5 times displayed and more...)
-// 2020-02-26 20:00:00 UTC
-// 2020-02-26 20:01:00 UTC
-// 2020-02-26 20:02:00 UTC
-// 2020-02-26 20:03:00 UTC
-// 2020-02-26 20:04:00 UTC
-// ...
 function update() {
 	global $db;
 	global $tmpFileName;
@@ -23,7 +14,7 @@ function update() {
 	file_put_contents($tmpFileName, $file);
 	$matchs=parseData($file);
 	$items=prepareData($matchs);
-	print_r($items);
+	// print_r($items);
 	foreach($items as $item) {
 		// name, totalCase, newCase, totalDeath, newDeath, totalRecovered, seriousUser
 		$clauses=[
