@@ -13,7 +13,6 @@ require_once "_netphp.php";
 
 function parseData($content) {
 	$regex=get("https://raw.githubusercontent.com/BaseMax/CoronaVirusOutbreakAPI/master/src/regex.txt");
-	file_put_contents("regex.txt", $regex);
 	$regex=explode("\n", $regex[0]);
 	// $regex=explode("\n", file_get_contents("regex.txt"));
 	if($content == "" || $content == null) {
